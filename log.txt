@@ -1,2 +1,3 @@
 [2025-12-10 17:46:18.519890] ADDED: (Name: Arnav, Roll Number: 25710, Marks: [100, 100, 100, 100], Average: 100.0)
 [2025-12-10 17:46:35.468405] SAVED: (db.txt)
+[2025-12-10 17:49:33.833964] ADDED: (Name: Rahul, Roll Number: 24502, Marks: [34, 64, 20, 80], Average: 49.5)
