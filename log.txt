@@ -1,5 +1,0 @@
-[2025-12-10 23:14:58.149577] ADDED: (Name: Arnav, Roll Number: 25710, Marks: [100, 100, 100, 100], Average: 100.0)
-[2025-12-10 23:15:16.388069] ADDED: (Name: Rahul, Roll Number: 23455, Marks: [54, 75, 35, 73], Average: 59.25)
-[2025-12-10 23:15:21.290116] SAVED: (db)
-[2025-12-10 23:15:51.167656] ADDED: (Name: Mohan, Roll Number: 20346, Marks: [10, 54, 90, 23], Average: 44.25)
-[2025-12-10 23:15:58.877410] SAVED: (db)
