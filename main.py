@@ -29,13 +29,10 @@ class Student:
             if not (mark >= 0 and mark <= 100):
                 raise ValueError("Marks must be between 0 and 100!")
         self.__marks = marks
-    @property
     def name(self):
         return self.__name
-    @property
     def rollno(self):
         return self.__roll
-    @property
     def marks(self):
         return self.__marks
     @property
@@ -61,8 +58,8 @@ class StudentDB:
         try:
             if isinstance(obj, Student):
                 for student in self.__L:
-                    if student.rollno == obj.rollno:
-                        raise RollNoExists(obj.rollno)
+                    if student.rollno() == obj.rollno():
+                        raise RollNoExists(obj.rollno())
                 self.__L.append(obj)
             else:
                 raise TypeError("Student not found!")
@@ -82,7 +79,7 @@ class StudentDB:
     def find_student(self, roll):
         try:
             for student in self.__L:
-                if student.rollno == int(roll):
+                if student.rollno() == int(roll):
                     return student
             raise StudentNotFound(roll)
         except ValueError:
@@ -95,7 +92,7 @@ class StudentDB:
             f = open(f"{filename}.txt", "w")
             names = []
             for i in self.__L:
-                names.append(str(f"{i.name}-{i.rollno}-{i.marks}-{i.average}\n"))
+                names.append(str(f"{i.name()}-{i.rollno()}-{i.marks()}-{i.average()}\n"))
             f.writelines(names)
             f.close()
         except FileNotFoundError:
