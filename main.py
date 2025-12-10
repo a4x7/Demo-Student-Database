@@ -120,6 +120,8 @@ class StudentDB:
     def view(self):
         for i in self.__L:
             print(i)
+    def count(self):
+        return len(self.__L)
 class StudentNotFound(Exception):
     def __init__(self, rollno):
         super().__init__(f"Roll number {rollno} not found!")
