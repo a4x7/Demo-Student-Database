@@ -92,7 +92,7 @@ class StudentDB:
             f = open(f"{filename}.txt", "w")
             names = []
             for i in self.__L:
-                names.append(str(f"{i.name()}-{i.rollno()}-{i.marks()}-{i.average()}\n"))
+                names.append(str(f"{i.name()}-{i.rollno()}-{i.marks()}-{i.average}\n"))
             f.writelines(names)
             f.close()
         except FileNotFoundError:
